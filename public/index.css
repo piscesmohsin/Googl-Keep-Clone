@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background: #eee;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background: #f5ba13;
+
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: azure;
+  font-size: 40px;
+  margin: 0px 0 0 20px;
+}
+header .greeting {
+  margin: 0 30px 0 0;
+  font-size: 40px;
+  color: #ffff;
+}
+.todolist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  font-size: 69px;
+  margin: 33px 0 0 0;
+  color: white;
+  background: cadetblue;
+  padding: 17px;
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  z-index: 0;
+  height: 100px;
+  width: 100%;
+  /* background: #f5ba13; */
+  color: #f5ba13;
+  padding: 35px 0 0 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.to-do-list {
+  background: #f5ba13;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* justify-content: space-around; */
+  gap: 50px;
+  margin: 50px;
+  /* height: 600px; */
+  padding: 40px;
+}
+.todo-form {
+  background: #ffff;
+  border-radius: 50px;
+  overflow: hidden;
+  /* height: 50px; */
+  /* width: 200px; */
+}
+.todo-form input {
+  height: 50px;
+  border: none;
+  padding: 10px 10px 10px 15px;
+}
+ input[type="text"]:focus {
+  border: none;
+  outline: none;
+  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3); */
+}
+.todo-form button {
+  background: #635353;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  color: #fff;
+}
+.item-list {
+  /* background: blueviolet; */
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 15px;
+}
+
+.note {
+  word-break: break-all;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.note span {
+  /* margin: 0 0 0 86px; */
+  float: right;
+}
+
+.all-clear {
+  border: none;
+  padding: 10px;
+  margin: 111px 0 0 0;
+  border-radius: 10px;
+}
