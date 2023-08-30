@@ -4,8 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin: 10px 0 0 0; */
-
   height: 30vh;
 }
 
@@ -20,6 +18,8 @@
   background: white;
   height: 100px;
   resize: none;
+  margin: 170px 0 0 0;
+  /* overflow: hidden; */
 }
 
 .keep-form input {
@@ -27,7 +27,7 @@
   padding: 10px 20px;
   overflow: hidden;
   width: 400px;
-
+  border-radius: 10px;
   font-size: 20px;
 }
 
@@ -39,6 +39,9 @@
   width: 40px;
   border-radius: 50%;
   padding: 8px;
+  border: none;
+  background: #f5ba13;
+  color: #fff;
 }
 
 .keep-notes-section {
@@ -49,10 +52,11 @@
   gap: 10px;
   flex-wrap: wrap;
   padding: 10px;
+  margin: 50px 0 0 0;
 }
 
 .keep-note {
-  background: rgb(255, 255, 2);
+  background: #fff;
   height: max-content;
   padding: 10px;
   margin: 10px;
@@ -63,6 +67,10 @@
 
 .keep-note h1 {
   line-break: break-all;
+}
+
+.keep-note p {
+  font-family: "Montserrat", sans-serif;
 }
 .keep-note button {
   float: right;

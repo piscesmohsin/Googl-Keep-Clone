@@ -7,9 +7,6 @@ const Keepnote = (props) => {
   }
   return (
     <>
-      
-      
-
         <div className="keep-note">
          
         <h1>{props.title}</h1>

@@ -12,7 +12,11 @@ const Note = () => {
   const handaleclick = (e) => {
     e.preventDefault();
     setItem((previous) => {
-      return [...previous, inputText];
+      if (inputText === "") {
+        return [...previous];
+      } else {
+        return [...previous, inputText];
+      }
     });
     setinputText("");
   };
@@ -31,34 +35,38 @@ const Note = () => {
 
   return (
     <>
-    <div className="todolist">
-      <div className="heading">Todolist App</div>
-      <div className="to-do-list">
-        <form className="todo-form">
-          <input
-            type="text"
-            placeholder="Enter Your Task"
-            onChange={handelchenge}
-            
-            value={inputText}
-          />
-          <button type="submit" onClick={handaleclick}>ADD</button>
-        </form>
+      <div className="todolist">
+        <div className="heading">Todolist App</div>
+        <div className="to-do-list">
+          <form className="todo-form">
+            <input
+              type="text"
+              placeholder="Enter Your Task"
+              onChange={handelchenge}
+              value={inputText}
+              required
+            />
+            <button type="submit" onClick={handaleclick}>
+              ADD
+            </button>
+          </form>
 
-        <ul className="item-list">
-          {item.map((additem, index) => {
-            return (
-              <Todolist
-                additem={additem}
-                key={index}
-                id={index}
-                onCheckd={deleteItem}
-              />
-            );
-          })}
-        </ul>
-        <button type="reset" className="all-clear" onClick={handaleallclear}>Reset</button>
-      </div>
+          <ul className="item-list">
+            {item.map((additem, index) => {
+              return (
+                <Todolist
+                  additem={additem}
+                  key={index}
+                  id={index}
+                  onCheckd={deleteItem}
+                />
+              );
+            })}
+          </ul>
+          <button type="reset" className="all-clear" onClick={handaleallclear}>
+            Reset
+          </button>
+        </div>
       </div>
     </>
   );

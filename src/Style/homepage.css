@@ -1,26 +1,30 @@
 .home-main-container{
-    height: 60vh;
-    display: flex;
+    height: 100vh;
+        display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .home-main-container ol {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
-    /* list-style: none; */
-    height: 200px;
-    width: 200px;
+    list-style: none;
+    height: 400px;
+    width: 400px;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background: #f5ba13;
     
 }
 .home-main-container ol li {
-    background: turquoise;
-    border: 2px solid;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 20px;
     width: 200px;
+    background: #212020;
 
 }
 .home-main-container ol li a{
