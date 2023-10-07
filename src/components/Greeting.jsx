@@ -5,7 +5,7 @@ const Greeting = () => {
     let  message = "";
 
     if  (currenttime >= 4 && currenttime < 12) {
-        message = "Good Morenig";
+        message = "Good Morning";
     }else if (currenttime >= 12 && currenttime <=17) {
         message = "Good AfterNoon";
     }else if (currenttime >= 18 && currenttime <= 22) {
@@ -16,7 +16,7 @@ const Greeting = () => {
 
 
   return (
-    <div> {message}</div>
+    <div style={{color:"black"}} > {message}</div>
   )
 }   
 

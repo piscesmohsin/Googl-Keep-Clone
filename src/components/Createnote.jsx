@@ -27,6 +27,7 @@ const Createnote = (props) => {
 
   return (
     <>
+   
       <div className="keep-main-container">
         <form className="keep-form">
           <input
@@ -38,6 +39,7 @@ const Createnote = (props) => {
             placeholder="Title"
             required
           />
+          
           <input
             name="content"
             value={note.content}
@@ -47,8 +49,8 @@ const Createnote = (props) => {
             placeholder="Content"
             required
           />
-          <button type="submit" className="btn" onClick={handelsubmite}>
-            add
+          <button id="keep-button" type="submit"  onClick={handelsubmite}>
+            Add
           </button>
         </form>
       </div>

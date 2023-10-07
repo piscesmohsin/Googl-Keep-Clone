@@ -36,17 +36,17 @@ const Note = () => {
   return (
     <>
       <div className="todolist">
-        <div className="heading">Todolist App</div>
-        <div className="to-do-list">
-          <form className="todo-form">
+        <div style={{backgroundColor:"white"}} className="to-do-list">
+          <form  >
             <input
-              type="text"
+              type="text" 
+              className="todo_input"
               placeholder="Enter Your Task"
               onChange={handelchenge}
               value={inputText}
               required
             />
-            <button type="submit" onClick={handaleclick}>
+            <button className="todo_btn"  type="submit" onClick={handaleclick}>
               ADD
             </button>
           </form>
