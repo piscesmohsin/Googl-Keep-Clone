@@ -6,7 +6,7 @@ const Header = () => {
     <header>
       <h1>
      
-        <Link style={{ textDecoration: "none", color: "white" }} to="/">
+        <Link style={{ textDecoration: "none", color: "black" }} to="/">
           
           Keeper
         </Link>

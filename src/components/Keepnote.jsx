@@ -7,13 +7,13 @@ const Keepnote = (props) => {
   }
   return (
     <>
-        <div className="keep-note">
-         
-        <h1>{props.title}</h1>
-        <p>{props.content}</p>
-        <button onClick={handelnoteclick} >Delete</button>
+        <div className="keeps">
+       <div><h2>{props.title}</h2></div>
+       <hr />
+        <div><p>{props.content}</p></div>
+        <button id="Del_btn"  onClick={handelnoteclick} >Delete</button>
+       
         </div>
-      
     </>
   );
 };

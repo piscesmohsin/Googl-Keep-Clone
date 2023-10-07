@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <p>Copyright &copy; {currentyear}</p>
+      <p style={{color:'black'}} >Copyright &copy; {currentyear}</p>
     </footer>
   );
 };
